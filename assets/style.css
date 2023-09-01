@@ -33,6 +33,12 @@ body {
     left: 300px;
     text-align: center;
 }
+#header1 {
+    display: block;
+    position: fixed;
+    top: 0%;
+    right: 1%;
+}
 
 a {
     color: var(--pink);
@@ -76,8 +82,17 @@ pre {
     margin-left: 10%;
 }
 
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 100%;
+    }
+}
 @media screen and (max-width: 782px) {
     .container {
         max-width: 100%;
+        margin-left: -60px;
+    }
+    .nav-header {
+        margin-left: -90px;
     }
 }
